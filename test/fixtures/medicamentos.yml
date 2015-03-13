@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  med_id: 1
+  med_nombre: MyString
+  med_linea: MyString
+
+two:
+  med_id: 1
+  med_nombre: MyString
+  med_linea: MyString

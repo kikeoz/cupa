@@ -1,0 +1,27 @@
+<%= form_for(@medicamento) do |f| %>
+  <% if @medicamento.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+      <% @medicamento.errors.each do |atributo, message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "CLAVE:" %><br>
+    <%= f.number_field :med_id %>
+  </div>
+  <div class="field">
+    <%= f.label "DESCRIPCION:" %><br>
+    <%= f.text_field :med_nombre %>
+  </div>
+  <div class="field">
+    <%= f.label "LINEA:" %><br>
+    <%= f.text_field :med_linea %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

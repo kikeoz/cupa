@@ -1,0 +1,33 @@
+<h1>Admin</h1>
+<p><%= link_to 'New Medicamento', new_medicamento_path %></p>
+<center>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th width=10%> </th>
+      <th width=10%>CLAVE</th>
+      <th width=40%>DESCRIPCION</th>
+      <th width=10%>LINEA</th>      
+      <th width=10%> </th>
+      <th width=10%> </th>
+      <th width=10%> </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @medicamentos.each do |medicamento| %>
+      <tr>
+        <td> </td>
+        <td><%= medicamento.med_id %></td>
+        <td><%= medicamento.med_nombre %></td>
+        <td><%= medicamento.med_linea %></td>
+        <td><%= link_to 'Edit', edit_medicamento_path(medicamento) %></td>
+        <td><%= link_to 'Destroy', medicamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</center>
+<br>

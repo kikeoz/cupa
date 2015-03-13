@@ -1,0 +1,47 @@
+// Place all the styles related to the medicamentos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// =CSS 3=
+// Tamaños de fuente 16px = 1rem
+
+
+body {  
+
+  font-size: 15px;
+  line-height: 18px;
+
+}
+
+hr { 
+  background-color: white; 
+  height: 2px;
+  width: 70%;
+}
+
+
+.field_with_errors {
+  padding: 2px;
+  background-color: #E74C3C;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid #E74C3C;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #E74C3C;
+  color: #fff;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #E74C3C;
+    color: #fff;
+  }
+
+}

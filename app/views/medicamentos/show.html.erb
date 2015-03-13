@@ -1,0 +1,19 @@
+<p class="alert alert-success"> <%= notice %></p>
+
+<p>
+  <strong>CLAVE:</strong>
+  <%= @medicamento.med_id %>
+</p>
+
+<p>
+  <strong>DESCRIPCION</strong>
+  <%= @medicamento.med_nombre %>
+</p>
+
+<p>
+  <strong>LINEA:</strong>
+  <%= @medicamento.med_linea %>
+</p>
+
+<%= link_to 'Editar', edit_medicamento_path(@medicamento) %> |
+<%= link_to 'Atras', medicamentos_path %>
