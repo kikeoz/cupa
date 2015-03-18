@@ -68,13 +68,13 @@ class MedicamentosController < ApplicationController
   end
 
   def buscar_por_clave
-   medicamento = Medicamento.where("cast(med_id as text) LIKE ?","%#{params[:med_id].to_s.downcase}%")
+   medicamento = Medicamento.where("cast(med_id as text) LIKE ?","#{params[:med_id].to_s.downcase}%")
    #Devuelve un json como salida al navegador.
    render :json => medicamento
  end
 
   def buscar_por_nombre
-   medicamento = Medicamento.where("med_nombre LIKE ?","%#{params[:med_nombre].to_s.downcase}%")
+   medicamento = Medicamento.where("cast(med_nombre as text) ILIKE ?","%#{params[:med_nombre].to_s.downcase}%")
    #Devuelve un json como salida al navegador.
    render :json => medicamento
  end

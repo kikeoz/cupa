@@ -4,21 +4,123 @@
 // =CSS 3=
 // Tamaños de fuente 16px = 1rem
 
+html {
+    background: url('../images/fondo_01.jpg') no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 body {  
-
+  color: #fff;
+  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 15px;
   line-height: 18px;
+  margin:0;
+  padding:0 0 0;
 
 }
 
+/* ------------------------------- HEADER ----------------------------------*/
+#header{
+background-color:#000;
+position: fixed;
+top:-8px;
+width:100%;
+height:40px;
+z-index: 1;
+text-align: right;
+}
+
+#menu{
+background-color:#000;
+top: 0px;
+height:25px;
+z-index: 2;
+text-align: right;
+margin-right: 20px;
+}
+
+#version{
+background-color:#000;
+position: fixed;
+top: 5px;
+height:25px;
+z-index: 3;
+text-align: left;
+margin-left: 10px;
+font--size: 13px;
+}
+/* -------------------------------LINKS-------------------------------------------*/
+a {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #fff;
+  &:visited 
+    {
+      color: #fff;
+    }
+  &:hover 
+    {
+      color: #3cf;
+      background-color: #000;     
+      border-radius: 35px;
+    }
+}
+/* ----------------------------------------------------------------------------*/
 hr { 
   background-color: white; 
   height: 2px;
   width: 70%;
 }
 
+h1 {
+  text-align: center;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
 
+h3 {
+  text-align: left;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+/* ------------------------------Buscador----------------------------------*/
+.panel_buscar {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 500px;
+  height: 100px;
+  border: 2px solid "transparent";
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  /* background-image: url("imagenes/fondo.png");-*/
+  background-color: "transparent";
+  color: #fff;
+  }
+
+  .barra_buscar {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 400px;
+  height: 20px;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: black;
+
+  }
+
+/* -----------------------------Mensajes de error------------------------------------*/
 .field_with_errors {
   padding: 2px;
   background-color: #E74C3C;

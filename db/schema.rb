@@ -11,18 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150301190738) do
+ActiveRecord::Schema.define(version: 20150318080823) do
 
-# These are extensions that must be enabled in order to support this database
+  # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "medicamentos", force: :cascade do |t|
-    t.integer  "med_id",     limit: 4
-    t.string   "med_nombre", limit: 255
-    t.string   "med_linea",  limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.integer  "med_id"
+    t.string   "med_nombre"
+    t.string   "med_linea"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
-
