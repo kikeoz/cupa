@@ -5,7 +5,6 @@ class CrearMedicamentos < ActiveRecord::Migration
       t.string :med_nombre
       t.string :med_linea
 
-      t.timestamps null: false
   		end
     end
 end

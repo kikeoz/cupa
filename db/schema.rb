@@ -20,8 +20,7 @@ ActiveRecord::Schema.define(version: 20150318080823) do
     t.integer  "med_id"
     t.string   "med_nombre"
     t.string   "med_linea"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+
   end
 
 end
