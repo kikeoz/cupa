@@ -8,12 +8,7 @@
 /* ------------------------------- CELULARES ----------------------------------*/
 
 
-/* Funciona perfectamente bien en Safari móvil */
-@media (min-width: 40em) {
-  html {
-    font-size: 20px;
-  }
-}
+
 
 /* ----------------------------------------------------------------------------*/
 
@@ -32,7 +27,7 @@ body {
   line-height: 18px;
   margin:0;
   padding:0 0 0;
- 
+  -webkit-text-size-adjust: none;
 
 }
 
@@ -86,7 +81,7 @@ a {
 hr { 
   background-color: white; 
   height: 1px;
-  width: 70%;
+  width: 80%;
 }
 
 table, tr, td, p, ul {

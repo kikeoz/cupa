@@ -28,9 +28,9 @@ $(document).ready(function(){
 					$.each(medicamentos,function(index,medicamento){
 
 						$(".medList").append(
-							"<table width=100%><tr><td width=20%><b> CLAVE: </b>" + medicamento.med_id + 
+							"<table width=80% cellspacing='2'><tr><td width=10%><b> CLAVE: </b>" + medicamento.med_id + 
 							"</td><td width=60%> <b> DESCRIPCION: </b>" + medicamento.med_nombre +
-							"</td><td width=20%><b> LINEA: </b>" + medicamento.med_linea + 
+							"</td><td width=10%><b> LINEA: </b>" + medicamento.med_linea + 
 							"</td></tr></table><hr>")
 					})
 				},
@@ -47,9 +47,9 @@ $(document).ready(function(){
 					$(".medList").html("");
 					$.each(medicamentos,function(index,medicamento){
 						$(".medList").append(
-							"<table width=100%><tr><td width=20%><b> CLAVE: </b>" + medicamento.med_id + 
+							"<table width=80% cellspacing='2'><tr><td width=10%><b> CLAVE: </b>" + medicamento.med_id + 
 							"</td><td width=60%> <b> DESCRIPCION: </b>" + medicamento.med_nombre +
-							"</td><td width=20%><b> LINEA: </b>" + medicamento.med_linea + 
+							"</td><td width=10%><b> LINEA: </b>" + medicamento.med_linea + 
 							"</td></tr></table><hr>")
 					})
 				},
