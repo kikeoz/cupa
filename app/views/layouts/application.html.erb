@@ -7,27 +7,26 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 
-
+	<meta name="viewport" content="width=568, maximum-scale=1.0">
 
 	<script src="/assets/javascript/buscar_por_clave.js"></script> 
 	<script src="/assets/javascript/buscar_por_nombre.js"></script> 
 
 </head>
 <body>	
-	<meta name="viewport" content="width=568, maximum-scale=1.0"> 
 
 <div id="header"> 
 	  	<div id="menu"> 
 	    	<p><a href="/"><b>Home</b></a> | <a href="/medicamentos/"><b>Login</b></a></p>
 	 	</div>
+
 	  	<div id="version"> 
    			<b>oz | v. 1.0 | 180315 </b>
   		</div>
 </div>
 </br>
 
-<%= yield %>
-
+	<%= yield %>
 
 </body>
 </html>

@@ -28,10 +28,10 @@ $(document).ready(function(){
 					$.each(medicamentos,function(index,medicamento){
 
 						$(".medList").append(
-							"<center><table cellspacing='5'><tr><td width=15%><b> CLAVE: </b></br>" + medicamento.med_id + 
-							"</td><td width=60%> <b> DESCRIPCION: </b></br>" + medicamento.med_nombre +
-							"</td><td width=15%><b> LINEA: </b></br>" + medicamento.med_linea + 
-							"</td></tr></table><hr></center>")
+							"<table><tr><td width=15%><b> CLAVE: </b>" + medicamento.med_id + 
+							"</td><td width=60%> <b> DESCRIPCION: </b>" + medicamento.med_nombre +
+							"</td><td width=15%><b> LINEA: </b>" + medicamento.med_linea + 
+							"</td></tr></table><hr>")
 					})
 				},
 				error: function(){
@@ -47,10 +47,10 @@ $(document).ready(function(){
 					$(".medList").html("");
 					$.each(medicamentos,function(index,medicamento){
 						$(".medList").append(
-							"<center><table cellspacing='5'><tr><td width=15%><b> CLAVE: </b></br>" + medicamento.med_id + 
-							"</td><td width=60%> <b> DESCRIPCION: </b></br>" + medicamento.med_nombre +
-							"</td><td width=15%><b> LINEA: </b></br>" + medicamento.med_linea + 
-							"</td></tr></table><hr></center>")
+							"<table><tr><td width=15%><b> CLAVE: </b>" + medicamento.med_id + 
+							"</td><td width=60%> <b> DESCRIPCION: </b>" + medicamento.med_nombre +
+							"</td><td width=15%><b> LINEA: </b>" + medicamento.med_linea + 
+							"</td></tr></table><hr>")
 					})
 				},
 				error: function(){

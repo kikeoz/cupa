@@ -22,6 +22,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 body {  
@@ -31,6 +32,7 @@ body {
   line-height: 18px;
   margin:0;
   padding:0 0 0;
+  width: 100%;
 
 }
 
@@ -64,6 +66,8 @@ text-align: left;
 margin-left: 10px;
 font--size: 13px;
 }
+
+
 /* -------------------------------LINKS-------------------------------------------*/
 a {
   margin-right: 10px;
@@ -84,21 +88,21 @@ a {
 hr { 
   background-color: white; 
   height: 1px;
-  width: 98%;
+  width: 90%;
 }
 
-table, tr, td, p, ul {
+tr, td, p{
   font-size: 16px;
 }
 
 table {
   width: 90%;
+  font-size: 16px;
 }
 
 td {
   vertical-align: text-top;
   text-align:justify;
-  padding: 15px;
 }
 
 h1 {
@@ -110,6 +114,14 @@ h1 {
 }
 
 h3 {
+  text-align: center;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+h4 {
   text-align: left;
   font-family: verdana, arial, helvetica, sans-serif;
   font-weight: bold;
@@ -117,6 +129,9 @@ h3 {
   color: #fff;
 }
 /* ------------------------------Buscador----------------------------------*/
+
+
+
 .panel_buscar {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
