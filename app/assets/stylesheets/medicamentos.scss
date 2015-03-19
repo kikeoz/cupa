@@ -8,7 +8,11 @@
 /* ------------------------------- CELULARES ----------------------------------*/
 
 
-
+@viewport {
+    width: extend-to-zoom 980px;
+    min-zoom: 0.25;
+    max-zoom: 5;
+  }
 
 /* ----------------------------------------------------------------------------*/
 
@@ -27,7 +31,6 @@ body {
   line-height: 18px;
   margin:0;
   padding:0 0 0;
-  -webkit-text-size-adjust: none;
 
 }
 
@@ -81,7 +84,7 @@ a {
 hr { 
   background-color: white; 
   height: 1px;
-  width: 80%;
+  width: 70%;
 }
 
 table, tr, td, p, ul {
