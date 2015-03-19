@@ -30,7 +30,7 @@ $(document).ready(function(){
 						$(".medList").append(
 							"<table><tr><td width=15%><b> CLAVE: </b>" + medicamento.med_id + 
 							"</td><td width=60%> <b> DESCRIPCION: </b>" + medicamento.med_nombre +
-							"</td><td width=15%><b> LINEA: </b>" + medicamento.med_linea + 
+							"</td><td width=15%><h4> LINEA: </h4>" + medicamento.med_linea + 
 							"</td></tr></table><hr>")
 					})
 				},
@@ -49,7 +49,7 @@ $(document).ready(function(){
 						$(".medList").append(
 							"<table><tr><td width=15%><b> CLAVE: </b>" + medicamento.med_id + 
 							"</td><td width=60%> <b> DESCRIPCION: </b>" + medicamento.med_nombre +
-							"</td><td width=15%><b> LINEA: </b>" + medicamento.med_linea + 
+							"</td><td width=15%><h4> LINEA: </h4>" + medicamento.med_linea + 
 							"</td></tr></table><hr>")
 					})
 				},
