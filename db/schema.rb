@@ -17,10 +17,9 @@ ActiveRecord::Schema.define(version: 20150318080823) do
   enable_extension "plpgsql"
 
   create_table "medicamentos", force: :cascade do |t|
-    t.integer  "med_id"
-    t.string   "med_nombre"
-    t.string   "med_linea"
-
+    t.integer "med_id"
+    t.string  "med_nombre"
+    t.string  "med_linea"
   end
 
 end
