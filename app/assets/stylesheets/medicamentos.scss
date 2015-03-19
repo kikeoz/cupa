@@ -4,6 +4,14 @@
 // =CSS 3=
 // Tamaños de fuente 16px = 1rem
 
+
+/* ------------------------------- CELULARES ----------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------------------*/
+
 html {
     background: url('../images/fondo_01.jpg') no-repeat fixed center;
     -webkit-background-size: cover;
@@ -15,10 +23,11 @@ html {
 body {  
   color: #fff;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
   margin:0;
   padding:0 0 0;
+ 
 
 }
 
@@ -76,7 +85,7 @@ hr {
 }
 
 table, tr, td, p, ul {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h1 {
@@ -91,7 +100,7 @@ h3 {
   text-align: left;
   font-family: verdana, arial, helvetica, sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
 }
 /* ------------------------------Buscador----------------------------------*/
@@ -143,7 +152,7 @@ h3 {
     text-align: left;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
-    font-size: 12px;
+    font-size: 14px;
     margin: -7px;
     margin-bottom: 0px;
     background-color: #E74C3C;
