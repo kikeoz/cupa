@@ -1,5 +1,6 @@
 class MedicamentosController < ApplicationController
   before_action :set_medicamento, only: [:show, :edit, :update, :destroy]  
+  http_basic_authenticate_with :name => "trunks", :password => "vampir0", only: [:index, :new, :edit]
   # http_basic_authenticate_with :name => "trunks", :password => "trunks"
 
   # GET /medicamentos
